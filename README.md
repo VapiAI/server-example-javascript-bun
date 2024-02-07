@@ -24,15 +24,13 @@ To get started with this project:
 
 1. Clone the repository to your local machine.
 2. Install the dependencies by running `pnpm install`.
-3. Setup wrangler by creating `wrangler.toml` by command `cp wrangler.example.toml wrangler.toml` in the root directory. Install wrangler cli if you don't have it using `npm i -g wrangler`.
-4. You can start the project locally using command `pnpm start`
-5. You can deploy the project to Bun using command `pnpm deploy:prod`
+3. You can start the project locally using command `pnpm start`
 
 #### Configuration
 
-1. Create `wrangler.toml` by command `cp wrangler.example.toml wrangler.toml` in the root directory.
-2. Get ur `OPENAI_API_KEY` from openai and update the `wrangler.toml` file.
-3. From Vapi dashboard, you can get your Vapi Private key from **Dashboard > Accounts > Vapi Keys > Api Key** and update `wrangler.toml` file
+1. Create `.env` by command `cp example.env .env` in the root directory.
+2. Get ur `OPENAI_API_KEY` from openai and update the `.env=` file.
+3. From Vapi dashboard, you can get your Vapi Private key from **Dashboard > Accounts > Vapi Keys > Api Key** and update `.env` file
 4. Get ServerURL
 
    1. Using Ngrok: Start the project locally using `pnpm start` and then use ngrok to get the url.
