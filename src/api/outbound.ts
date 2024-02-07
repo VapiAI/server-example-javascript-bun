@@ -1,6 +1,6 @@
 import { Hono } from "hono";
+import { envConfig } from "../config/env.config";
 import { Bindings } from "../types/hono.types";
-import { env } from "hono/adapter";
 
 const app = new Hono<{ Bindings: Bindings }>();
 
@@ -14,12 +14,11 @@ app.post("/", async (c) => {
      * This can initiate an outbound call to a customer's phonenumber using Vapi.
      */
 
-    const { VAPI_BASE_URL, VAPI_API_KEY } = env(c);
-    const response = await fetch(`${VAPI_BASE_URL}/call/phone`, {
+    const response = await fetch(`${envConfig.vapi.baseUrl}/call/phone`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${VAPI_API_KEY}`,
+        Authorization: `Bearer ${envConfig.vapi.apiKey}`,
       },
       body: JSON.stringify({
         phoneNumberId: phoneNumberId,
