@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   hono:
-    specifier: ^3.12.8
-    version: 3.12.11
+    specifier: ^4.2.7
+    version: 4.2.7
   llamaindex:
     specifier: ^0.1.9
-    version: 0.1.9(typescript@5.3.3)
+    version: 0.1.9(typescript@5.4.5)
   openai:
     specifier: ^4.26.1
     version: 4.26.1
@@ -154,7 +154,7 @@ packages:
     resolution: {integrity: sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==}
     dev: false
 
-  /@qdrant/js-client-rest@1.7.0(typescript@5.3.3):
+  /@qdrant/js-client-rest@1.7.0(typescript@5.4.5):
     resolution: {integrity: sha512-16O0EQfrrybcPVipodxykr6dMUlBzKW7a63cSDUFVgc5a1AWESwERykwjuvW5KqvKdkPcxZ2NssrvgUO1W3MgA==}
     engines: {node: '>=18.0.0', pnpm: '>=8'}
     peerDependencies:
@@ -162,8 +162,8 @@ packages:
     dependencies:
       '@qdrant/openapi-typescript-fetch': 1.2.1
       '@sevinf/maybe': 0.5.0
-      typescript: 5.3.3
-      undici: 5.28.3
+      typescript: 5.4.5
+      undici: 5.28.4
     dev: false
 
   /@qdrant/openapi-typescript-fetch@1.2.1:
@@ -675,8 +675,8 @@ packages:
     resolution: {integrity: sha512-Y8T4vYhEfwJOTbouREvG+3XDsjr8E3kIr7uf+JZ0BYloFsttiHU0WfvANVsR7TxNUJa/WpCnw/Ino/p+DeBhBQ==}
     dev: false
 
-  /hono@3.12.11:
-    resolution: {integrity: sha512-LSpxVgIMR3UzyFiXZaPvqBUGqyOKG0LMZqgMn2RXz9f+YAdkHSfFQQX0dtU72fPm5GnEMh5AYXs0ek5NYgMOmA==}
+  /hono@4.2.7:
+    resolution: {integrity: sha512-k1xHi86tJnRIVvqhFMBDGFKJ8r5O+bEsT4P59ZK59r0F300Xd910/r237inVfuT/VmE86RQQffX4OYNda6dLXw==}
     engines: {node: '>=16.0.0'}
     dev: false
 
@@ -779,7 +779,7 @@ packages:
       immediate: 3.0.6
     dev: false
 
-  /llamaindex@0.1.9(typescript@5.3.3):
+  /llamaindex@0.1.9(typescript@5.4.5):
     resolution: {integrity: sha512-MAMGV5MXXcJ4rSV2kqCZENf7B+q1zTwPnHpnHJgEiEzP5+djNdLmbz/zaCmxpB8wgNNLUem9iJt53iwDBJ4ZBA==}
     engines: {node: '>=18.0.0'}
     dependencies:
@@ -788,7 +788,7 @@ packages:
       '@mistralai/mistralai': 0.0.10
       '@notionhq/client': 2.2.14
       '@pinecone-database/pinecone': 1.1.3
-      '@qdrant/js-client-rest': 1.7.0(typescript@5.3.3)
+      '@qdrant/js-client-rest': 1.7.0(typescript@5.4.5)
       '@xenova/transformers': 2.15.0
       assemblyai: 4.2.2
       chromadb: 1.7.3(openai@4.26.1)
@@ -1643,8 +1643,8 @@ packages:
       safe-buffer: 5.2.1
     dev: false
 
-  /typescript@5.3.3:
-    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
+  /typescript@5.4.5:
+    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: false
@@ -1660,8 +1660,8 @@ packages:
     resolution: {integrity: sha512-VJD0un4i6M1/lFOJPhacHdq6FadtlkdhKBed2W6yBqmrAr/W58oqENaOIX031stDVFwz9AemOLkIj/2AXAMLCg==}
     dev: true
 
-  /undici@5.28.3:
-    resolution: {integrity: sha512-3ItfzbrhDlINjaP0duwnNsKpDQk3acHI3gVJ1z4fmwMK31k5G9OVIAMLSIaP6w4FaGkaAkN6zaQO9LUvZ1t7VA==}
+  /undici@5.28.4:
+    resolution: {integrity: sha512-72RFADWFqKmUb2hmmvNODKL3p9hcB6Gt2DOQMis1SEBaV6a4MH8soBvzg+95CYhCKPFedut2JY9bMfrDl9D23g==}
     engines: {node: '>=14.0'}
     dependencies:
       '@fastify/busboy': 2.1.0
